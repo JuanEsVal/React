@@ -1,0 +1,37 @@
+Creacion de API en GIPHY Developers:
+
+https://developers.giphy.com:
+
+se crea una API:    
+
+	Create an App
+	API Selected
+		Next Steep
+	Se le pone Nombre a la aplicacion y la descripcion, se hace Check en el recuadro
+		Create App
+	Copio el API Key que aparece: P.e.: t6XVuqJLKggWKblqOoQAyhO36aRwCikj
+
+Usar la API:
+
+	Voy a la parte de arriba en Docs  (Documentacion de GIPHY)
+	Me ubico a la izquierda en:
+		-GIPHY API
+			-GIF & Stickers Endpoints
+				-Random Endpoint
+					y copio Gig URL P.e,: api.giphy.com/v1/gifs/random
+
+	Abro una nueva ventana ypego la URL y le adiciono la api key que tenemos asi: endpoint + ?api_key= + la API Key generada
+		https://api.giphy.com/v1/gifs/random?api_key=t6XVuqJLKggWKblqOoQAyhO36aRwCikj
+				
+
+	VSC:
+	Creo una Constante:
+		const apiKey = 't6XVuqJLKggWKblqOoQAyhO36aRwCikj';
+		const peticion = fetch(`https://api.giphy.com/v1/gifs/random?api_key=${apiKey}`);
+		peticion.then(console.log);	//  peticion.then( resp => console.log(resp) );
+
+
+
+	
+	
+
